@@ -1,5 +1,8 @@
-class RemoveCostumeStoreIdFromCostumeStores < ActiveRecord::Migration[4.2]
+class CreateCostumeStoreCostumes < ActiveRecord::Migration[4.2]
   def change
-    remove_column :costume_stores, :costume_store_id
+    create_table :costume_store_costumes do |t|
+      t.integer :costume_store_id
+      t.integer :costume_id
+    end
   end
 end
