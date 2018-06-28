@@ -1,5 +1,5 @@
 class CostumeStoreCostume < ActiveRecord::Base
-  belongs_to :costume_store
+  # belongs_to :costume_store
   belongs_to :costume
 
   # def costume_store
