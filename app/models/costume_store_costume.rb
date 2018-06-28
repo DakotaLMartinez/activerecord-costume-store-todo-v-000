@@ -2,6 +2,8 @@ class CostumeStoreCostume < ActiveRecord::Base
   # belongs_to :costume_store
   belongs_to :costume
 
+  # csc = CostumeStoreCostume
+  # csc.instance_methods.select {|m| m.to_s.include?("costume")}
   # def costume_store
   #   CostumeStore.find_by(id: self.costume_store_id)
   # end
